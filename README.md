@@ -14,21 +14,21 @@ tests ——丢包、失序等测试。
 
 ##### RUDP协议
 
-发送端：
+发送端 (跳过空格)：
 
-start|<sequence number>|<data>|<checksum>
+start|< sequence number>|< data>|< checksum>
 
-data|<sequence number>|<data>|<checksum>
+data|< sequence number>|< data>|< checksum>
 
-end|<sequence number>|<data>|<checksum>
+end|< sequence number>|< data>|< checksum>
 
 接收端（GBN）：
 
-ack|<sequence number>|<checksum>
+ack|< sequence number>|< checksum>
 
 接收端（SR）：
 
-sack|<cum_ack;sack1,sack2,sack3,...>|<checksum>
+sack|<cum_ack;sack1,sack2,sack3,...>|< checksum>
 
 注：cum_ack相当于GBN下的sequence number
 
